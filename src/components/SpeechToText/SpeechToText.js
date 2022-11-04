@@ -1,21 +1,20 @@
 import { useEffect } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import { createSpeechlySpeechRecognition } from '@speechly/speech-recognition-polyfill';
 import './SpeechToText.css';
 
-export default function SpeechToText() {  
+export default function SpeechToText() { 
   const {
     transcript,
     listening,
     resetTranscript,
     browserSupportsSpeechRecognition,
-    finalTranscript,
-    interimTranscript
   } = useSpeechRecognition();
 
   const listenContinuously = () => {
     SpeechRecognition.startListening({
       continuous: true,
-      language: 'en-GB'
+      language: 'en-US'
     });
   };
 
@@ -30,7 +29,7 @@ export default function SpeechToText() {
       <button onClick={SpeechRecognition.stopListening}>Stop</button>
       <button onClick={resetTranscript}>Reset</button>
       <h3>your speech</h3>
-      <p>{transcript}</p>
+      <p>{transcript.toLowerCase()}</p>
     </div>
   );
 }

@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@speechly/react-client": "^2.2.0",
+    "@speechly/react-ui": "^2.7.0",
+    "@speechly/speech-recognition-polyfill": "^1.2.0",
     "@supabase/supabase-js": "^1.28.5",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
