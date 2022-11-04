@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: steelblue;
+  height: 50px;
+}
+
+.header span {
+  margin: 5px;
+}
