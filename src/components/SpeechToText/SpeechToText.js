@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import { createSpeechlySpeechRecognition } from '@speechly/speech-recognition-polyfill';
 import './SpeechToText.css';
 
 export default function SpeechToText() { 
