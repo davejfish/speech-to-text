@@ -14,9 +14,7 @@ SpeechRecognition.applyPolyfill(SpeechlySpeechRecognition);
 
 root.render(
   <React.StrictMode>
-    <SpeechProvider appId={process.env.REACT_APP_SPEECHLY_API}>
-      <App />
-    </SpeechProvider>
+    <App /> 
   </React.StrictMode>
 );
 
